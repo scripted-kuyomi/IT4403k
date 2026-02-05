@@ -45,6 +45,27 @@ nav a{
     color: var(--btn);
 }
 
+.nav-btn{
+    appearance: none;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-btn.active {
+  background: #111;
+}
+
+.nav-btn.active {
+  background: #111;
+}
+
 nav a.active{
     background: var(--btn);
     color: var(--btnText)
