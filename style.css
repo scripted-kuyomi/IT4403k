@@ -84,3 +84,89 @@ footer{
     text-align: center;
     font-size: 0.9rem;
 }
+:root{
+    --border: #dddddd;
+    --text: #222222;
+    --bg: #ffffff;
+    --btn: #333333;
+    --btnText: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+    background:var(--bg);
+}
+
+header{
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+main{
+    padding:20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a{
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid var(--btn);
+    border-radius: 6px;;
+    text-decoration: none;
+    color: var(--btn);
+}
+
+.nav-btn{
+    appearance: none;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-btn.active {
+  background: #111;
+}
+
+.nav-btn.active {
+  background: #111;
+}
+
+nav a.active{
+    background: var(--btn);
+    color: var(--btnText)
+}
+
+.card{
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+footer{
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
