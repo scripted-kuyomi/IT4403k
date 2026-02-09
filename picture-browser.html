@@ -173,12 +173,14 @@
                         $caption.text(item.caption);
                         $img.attr("alt",item.alt);
 
-                        $img.attr("src",item.url);
+                        $img.attr("src",item.url).show();
+
+
 
                         $img.each(function(){
                             if(this.complete)$(this).trigger("load");
                         });
-                    })
+                    }); // end fadeOut
                 }
 
                 $("#nextBtn").on("click",function(){
