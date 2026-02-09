@@ -42,7 +42,7 @@ nav{
 }
 
 .nav-btn:hover{
-    background:rgba(212, 175 55, .15);
+    background:rgba(212, 175 55, 0.15);
     transform: translateY(-1px);
 }
 .nav-btn:active{
@@ -73,7 +73,7 @@ h2,h3{
 }
 
 .meta,
-hint{
+.hint{
     color:var(--muted)
 }
 
