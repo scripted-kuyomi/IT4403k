@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale-1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Picture Browser Application</title>
         <link rel="stylesheet" href="style.css"/>
 
@@ -146,51 +146,52 @@
                     .text(msg);
                 }
 
-                function showImage(i, direction = "next"){
-                    index = (i + images.length) % images.length;
+                function showImage(i){
+                    index = (i +images.length) % images.length;
                     const item = images[index];
 
                     $counter.text(`${index + 1} / ${images.length}`);
-                    setStatus(`Loading...`);
+                    setStatus("Loading...");
 
-                    //fade transition
                     const fadeOutMs = 150;
-                    const fadeInMs = 200;
+                    const fadeInMs= 200;
 
-                    $img.stop(true,true).fadeOut(fadeOutMs, function(){
+                    $img.stop(true,true).fadeOut(fadeOutMs,function(){
                         $img
-                        .attr("src",item.url)
-                        .attr("alt",item.alt);
-
-                        $caption.text(item.caption);
-
-                        // when the new image loads it fades in
-                        $img.off("load").on("load",function(){
+                        .off("load error")
+                        .one("load", function(){
                             setStatus("Ready");
+                            $img.fadeIn(fadeInMs);
+                        })
+                        .one("error",function(){
+                            setStatus("Image failed to load. Check the URL",true);
+                            $caption.text("Error:image could not be loaded.");
+                            $img.attr("alt","Image failed to load");
                             $img.fadeIn(fadeInMs);
                         });
 
-                        $img.off("error").on("error", function(){
-                            setStatus("Image failed to load. Check the URL.", true);
-                            $caption.text("Error: image could not be loaded.");
-                            // fallback loop
-                            $img.attr("alt","Image failed to load");
-                            $img.fadeIn(fadeInMs);
+                        $caption.text(item.caption);
+                        $img.attr("alt",item.alt);
+
+                        $img.attr("src",item.url);
+
+                        $img.each(function(){
+                            if(this.complete)$(this).trigger("load");
                         });
                     })
                 }
 
                 $("#nextBtn").on("click",function(){
-                    showImage(index + 1, "next");
+                    showImage(index + 1);
                 });
 
                 $("#prevBtn").on("click",function(){
-                    showImage(index - 1, "prev");
+                    showImage(index - 1);
                 });
 
                 $(document).on("keydown",function(e){
-                    if(e.key ==="ArrowRight") showImage(index + 1, "next");
-                    if(e.key === "ArrowLeft") showImage(index - 1,"prev");
+                    if(e.key ==="ArrowRight") showImage(index + 1);
+                    if(e.key === "ArrowLeft") showImage(index - 1);
                 });
 
                 if(images.length === 0){
