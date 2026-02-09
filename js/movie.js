@@ -7,8 +7,7 @@ $(function(){
 
         $("#movieOutput").html(`
             <div class="movie-layout">
-            <img src="${data.poster}"
-            class="movie-poster">
+            <img src="${data.poster}" alt="Poster for ${data.title}" class="movie-poster">
 
             <div class="movie-details">
             <h2>${data.title}</h2>
