@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale-1"/>
+        <title>Picture Browser Application</title>
+        <link rel="stylesheet" href="style.css"/>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+
+        <style>
+            .viewer{
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            figure{
+                margin: 0;
+            }
+            .img-wrap{
+                border: 1px solid #2a2a2a;
+                border-radius: 14px;
+                background: #141414;
+                padding: 12px;
+            }
+            
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                display: block;
+            }
+
+            figcaption{
+                margin-top: 10px;
+                color:#cfcfcf;
+            }
+            .controls{
+                display: flex;
+                gap: 10px;   
+                flex-wrap: wrap;    
+                margin-top: 14px;
+                align-items: center;
+            }
+            .meta{
+                color:#cfcfcf;
+            }
+            .error{
+                font-weight: 700;
+            }
+            .sr-only{
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0,0,0,0);
+                white-space: nowrap;
+                border: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav aria-label="Primary navigation">
+            <a class="nav-btn" href="index.html">Home</a>
+            <a class="nav-btn" href="modified-calculator.html">Modified Calculator Example</a>
+            <a class="nav-btn active" href="picture-browser.html">Picture Browser Application</a>
+        </nav>
+
+        <main class="viewer">
+            <div class="card">
+                <h1>Picture Browser Application</h1>
+                <p class="meta">
+                    Use <strong>Next</strong> or keyboard <strong>Right Arrow</strong> / <strong>Left Arrow</strong>.
+                </p>
+
+                <figure>
+                    <div class="img-wrap">
+                        <img id="photo"
+                        src=""
+                        alt=""
+                        loading="lazy" />
+                    </div>
+                    <figcaption id="caption">-</figcaption>
+                </figure>
+
+                <div class="controls">
+                    <button class="nav-btn" id="prevBtn" type="button">Prev</button>
+                    <button class="nav-btn" id="nextBtn" type="button">Next</button>
+
+                    <span class="meta" id="counter">0 / 0</span>
+                    <span class="meta" id="status" aria-live="polite"></span>
+
+                    <span class="sr-only" id="kbdHelp">
+                        Keyboard navigation enabled: Left arrow for previous, right arrow for next.
+                    </span>
+                </div> 
+
+                <hr style="border:0;border-top:1px solid #2a2a2a;margin:18px 0;" />
+
+" />
+ 
+                <h2>Attribution</h2>
+                <p class="meta">
+                    Replace the sample image URLs with your own Creative Commons-licesned images and list attribution here (creator, title, license, source link) when required.
+                </p>
+            </div>
+        </main>
+
+        <script>
+            $(function(){
+                const images =[
+                    {
+                        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fronalpstock_big.jpg/2560px-Fronalpstock_big.jpg",
+                        alt: "Mountain landscape with a lake and clouds",
+                        caption: "Mountain landscape (sample from Wikimedia Commons)"
+                    },
+                    {
+                        url: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg",
+                        alt: "Golden texture background",
+                        caption: "Gold texture (sample from Wikimedia Commons)"
+                    },
+                    {
+                        url: "https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+                        alt: "Example image showing transparency.",
+                        caption: "Transparency demo image (sample)",
+                    },
+                    {
+                        url:"https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+                        alt: "Flutter logo on white background",
+                        caption: "Logo image(simple)",
+                    }
+                ];
+
+                let index = 0;
+
+                const $img = $("#photo");
+                const $caption = $("#caption");
+                const $counter = $("#counter");
+                const $status = $("#status");
+
+                function setStatus(msg,isError=false){
+                    $status
+                    .toggleClass("error",isError)
+                    .text(msg);
+                }
+
+                function showImage(i, direction = "next"){
+                    index = (i + images.length) % images.length;
+                    const item = images[index];
+
+                    $counter.text(`${index + 1} / ${images.length}`);
+                    setStatus(`Loading...`);
+
+                    //fade transition
+                    const fadeOutMs = 150;
+                    const fadeInMs = 200;
+
+                    $img.stop(true,true).fadeOut(fadeOutMs, function(){
+                        $img
+                        .attr("src",item.url)
+                        .attr("alt",item.alt)
+
+                        $caption.text(item.caption);
+
+                        // when the new image loads it fades in
+                        $img.off("load").on("load",function(){
+                            setStatus("Ready");
+                            $img.fadeIn(fadeInMs);
+                        });
+
+                        $img.off("error").on("error", function(){
+                            setStatus("Image failed to load. Check the URL.", true);
+                            $caption.text("Error: image could not be loaded.");
+                            // fallback loop
+                            $img.attr("alt","Image failed to load");
+                            $img.fadeIn(fadeInMs);
+                        });
+                    })
+                }
+
+                $("#nextBtn").on("click",function(){
+                    showImage(index + 1, "next");
+                });
+
+                $("#prevBtn").on("click",function(){
+                    showImage(index - 1, "prev");
+                });
+
+                $(document).on("keydown",function(e){
+                    if(e.key ==="ArrowRight") showImage(index + 1, "next");
+                    if(e.key === "ArrowLeft") showImage(index - 1,"prev");
+                });
+
+                if(images.length === 0){
+                    setStatus("No images in the array.", true);
+                    $counter.text("0 / 0");
+                } else {
+                    showImage(0);
+
+                }
+            });
+        </script>
+
+    </body>
+</html>
