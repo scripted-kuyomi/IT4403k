@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Modified Calculator Example | IT 4403</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -42,7 +42,7 @@
 <body>
     <nav aria-label="Primary navigation">
         <a class="nav-btn" href="index.html">Home</a>
-        <a class="nav-btn" href="modified-calculator.html">Modified Calculator Example</a>
+        <a class="nav-btn active" href="modified-calculator.html">Modified Calculator Example</a>
         <a class="nav-btn" href="picture-browser.html">Picture Browser Application</a>
     </nav>
 
@@ -134,7 +134,7 @@
             if (op === "/" && n2 === 0){
                 out = "Error: cannot divide by 0";
                 $status.text("Fix number B to a non-zero value for division.");
-                $results.css("font-weight","700");
+                $result.css("font-weight","700");
             } else {
                 switch(op){
                     case "+": out = n1 + n2; break;
