@@ -1,11 +1,12 @@
 {
     "title": "Inception",
     "year": 2010,
+    "genre": "Science Fiction",
     "director": "Christopher Nolan",
     "actors": [
         "Leonardo DiCaprio",
         "Joseph Gordon-Levitt",
-        "Ellen Page"
+        "Elliot Page"
     ],
     "plot": "A skilled thief is offered a chance to erase his criminal record if he can succesfully perform inception",
     "rating": 8.8
