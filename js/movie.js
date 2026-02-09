@@ -1,5 +1,5 @@
 $(function(){
-    $.getJSON("data/movie.json", function(data){
+    $.getJSON("js/data-movie.json", function(data){
 
         const actorsList = Array.isArray(data.actors)
         ? data.actors.join(", ")
