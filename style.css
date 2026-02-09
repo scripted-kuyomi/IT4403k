@@ -85,3 +85,12 @@ footer{
     font-size: 0.9rem;
     color:var(--muted);
 }
+
+#movieOutput h2{
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+#movieOutput p{
+    margin: 6px 0;
+}
