@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewpoint" content="width=device-width, initial-scale-1"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1"/>
         <title>Picture Browser Application</title>
         <link rel="stylesheet" href="style.css"/>
 
@@ -99,9 +99,7 @@
                     </span>
                 </div> 
 
-                <hr style="border:0;border-top:1px solid #2a2a2a;margin:18px 0;" />
-
-" />
+                <hr style="border:0;border-top:1px solid #2a2a2a;margin:18px 0;"/>
  
                 <h2>Attribution</h2>
                 <p class="meta">
@@ -162,7 +160,7 @@
                     $img.stop(true,true).fadeOut(fadeOutMs, function(){
                         $img
                         .attr("src",item.url)
-                        .attr("alt",item.alt)
+                        .attr("alt",item.alt);
 
                         $caption.text(item.caption);
 
