@@ -6,6 +6,11 @@ $(function(){
         : data.actors;
 
         $("#movieOutput").html(`
+            <div class="movie-layout">
+            <img src="${data.poster}"
+            class="movie-poster">
+
+            <div class="movie-details">
             <h2>${data.title}</h2>
             <p><strong>Year:</strong> ${data.year}</p>
             <p><strong>Genre:</strong> ${data.genre}</p>
@@ -13,6 +18,8 @@ $(function(){
             <p><strong>Actors:</strong> ${actorsList}</p>
             <p><strong>Plot:</strong> ${data.plot}</p>
             <p><strong>Rating:</strong> ${data.rating}</p>
+            </div>
+        </div>
         `);
     })
     .fail(function(){

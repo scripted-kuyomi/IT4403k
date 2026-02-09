@@ -94,3 +94,26 @@ footer{
 #movieOutput p{
     margin: 6px 0;
 }
+
+.movie-layout{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.movie-poster{
+    width: 220px;
+    border-radius:12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.movie-details{
+    flex: 1;
+    min-width: 250px;
+}
+
+.movie-details h2{
+    color: var(--gold);
+    margin-bottom: 10px;
+}
