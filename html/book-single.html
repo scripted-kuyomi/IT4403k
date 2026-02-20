@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name ="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Single Book | IT 4403</title>
+
+    <script>"https://code.jquery.com/jquery-3.7.1.min.js"</script>
+
+    <style>
+        :root { --bg: #0b0b0b; --surface: #141414; --text: #f5f5f5; --muted: #cfcfcf; --gold:#d4af37; --border: #2a2a2a; }
+        body {margin:0; font-family: Arial, sans-serif; background:var(--bg); color: var(--text);line-height: 1.6 ;}
+        nav { padding:16px 20px; border-bottom:1px solid var(--border); display: flex; gap: 10px; flex-wrap: wrap;}
+        a.nav-btn { border: 1px solid var(--gold);text-decoration: none;padding: 10px 14px; border-radius: 10px;}
+        a.nav-btn-hover{background: rgba(212, 175, 55,0.15);}
+        main {max-width: 100px; margin: 0 auto; padding:24px;}
+        .card{background:var(--surface); border: 1px solid var(--border); border-radius: 16px;padding: 18px;}
+        h1,h2{color: var(--gold); margin-top: 0;}
+        .grid {display: grid; grid-template-columns: 180px 1fr; gap:18px; align-items:start;}
+        .thumb{width: 180px; border-radius: 12px; border: 1px solid var(--border); background: #0f0f0f;}
+        .meta{color: var(--muted);}
+        .row{margin: 6px 0;}
+        .row strong{display: inline-block; border: 1px solid var(--border); padding: 4px 10px; border-radius: 999px; margin: 3px 6px 0 0; color: var(--muted);}
+        .links a{color: var(--gold);}
+        .pill {display: inline-block; border: 1px solid var(--border);padding: 4px 10px; border-radius: 999px; margin: 3px 6px 0 0; color: var(--muted);}
+        .error{font-weight: 700; color: #ffb3b3;}
+    </style>
+ </head>
+
+ <body>
+    <nav aria-label="Primary navigation">
+        <a class = "nav-btn" href="index.html">Home</a>
+        <a class="nav-btn" href="book-single.html">Single book JSON</a>
+        <a class="nav-btn" href="book-search.html">Search Results JSON</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h1>Single Book (google-books-book.json)</h1>
+            <p class="meta">This page reads one JSON file and displays complete information for a single book. </p>
+            <div id="output">Loading..</div>
+        </div>
+    </main>
+
+    <script>
+        $(function() {
+            $.getJSON("data/google-books-book.json", function (data) {
+                const v = data.volumeInfo || {};
+                const s = data.salesInfo || {};
+                const img = (v.imagesLinks && (v.imagesLinks.thumbnail || v.imagesLinks.smallThumbnail)) || "";
+                const authors = Array.isArray(v.authors) ? v.authors.join(", ") : (v.authors || "N/A");
+                const cats = Array.isArray(v.categories) ? v.categories : [];
+                const desc = v.description || "No description available.";
+
+                const preview = v.previewLink || "";
+                const info = v.infoLink || "";
+                const buy = (s.buyLink) ? s.buyLink : "";
+
+                $("#output").html(` 
+                <div class= "grid">
+                    <div>
+                    ${img ? `<img class="thumb" src = "${img}" alt= Book cover for ${escapeHtml(v.title || " book")}" />`
+                    : `div class "thumb" style = "height:240px; display:flex; align-items:center; justify-content:center; color: var(--muted);">No Image</div>`}
+                    </div>
+
+                
+                <div>
+                    <h2>${escapeHtml(v.title || "Untitled")}</h2>
+                    <p class="meta">${escapeHtml(v.subtitle || "")}</p>
+
+                    <div class="row"><strong>Authors</strong> ${escapeHtml(authors)}</div>
+                    <div class="row"><strong>Publisher</strong> ${escapeHtml(v.publisher || "N/A")}</div>
+                    <div class = "row"><strong>Published</strong> ${escapeHtml(v.publishedDate || "N/A")}</div>
+                    <div class="row"><strong>Page Count</strong> ${escapeHtml(v.pageCount || "N/A")}</div>
+                    <div class="row"><strong>Language</strong> ${escapeHtml((v.language || "N/A").toUpperCase())}</div>
+                    <div class="row"><strong>Average Rating</strong> ${escapeHtml(v.averageRating || "N/A")}</div>
+                    <div class="row"><strong>Ratings:</strong> ${escapeHtml(v.ratingsCount || "N/A")}</div>
+
+                    ${cats.length ? `<div class="row"><strong>Categories</strong> ${cats.map(c=> `<span class="pill">${escapeHtml(c)}</span>`).join(" ")}</div>` : ""}
+
+                    <hr style="border:0;border-top:1px solid var(--border); margin: 16px 0;">
+
+                    <h3 style="color #f0e6c2; margin: 0 0 6px;">Description</h3>
+                    <div class="meta">${desc}</div>
+
+                    <div class="links" style="margin-top: 14px;">
+                        ${preview ? `<div><a href="${preview}"target="blank" rel="noopener">Preview</a></div>` : ""}
+                        ${info ? `<div><a href="${info}"target="blank" rel="noopener">More Info</a></div>` : ""}
+                        ${buy ? `<div><a href="${buy}"target="blank" rel="noopener">Buy Link</a></div>` : ""}
+                    </div>
+                </div>
+            </div>
+         `);
+        }).fail(function(){
+            $("#output").html(`p class="error">Could not load google-books-book.json. Check file path</p>`);
+        });
+
+        function escapeHtml(str){
+            return String(str).replace(/[&<>"']/g, function(m){
+                return {"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"}[m];
+            });
+        }
+        });
+    </script>
+ </body>
+</html>

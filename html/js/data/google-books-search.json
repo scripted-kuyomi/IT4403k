@@ -1,0 +1,892 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1000000,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "whn_EAAAQBAJ",
+      "etag": "uFJRfT7L8Bk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/whn_EAAAQBAJ",
+      "volumeInfo": {
+        "title": "Building Microservices with Node.js",
+        "subtitle": "Explore microservices applications and migrate from a monolith architecture to microservices",
+        "authors": [
+          "Daniel Kapexhiu"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2024-05-03",
+        "description": "Venture into microservices with Node.js, uncovering step-by-step roadmaps, insightful demonstrations, and cutting-edge techniques to build robust web applications Key Features Explore microservices architecture and implement it using Node.js for robust web applications Follow clear, practical examples and real-world use cases to apply your knowledge and build your skills Excel in the world of software development and tackle complex challenges with confidence Purchase of the print or Kindle book includes a free PDF eBook Book Description– Immerse yourself in the world of microservices with this guide to migration from a monolithic architecture to microservices. – With this book, you’ll acquire a deep understanding of microservices architecture and apply it confidently in your web application projects. – As you progress, you’ll be guided through the process of creating a simple application and incorporating the Node.js framework into it, along with its commonly used libraries. – You’ll learn how the framework operates, how to configure it, and how to develop handlers for the web framework and explore how to deploy your application to a production server. – Get to grips with the intricacies of JavaScript and Node.js and find out how to approach microservices in Node.js, implement them effectively, and integrate RESTful APIs. – Gain insights into service-to-service authentication and authorization and learn how to work with databases and caching, as well as with monitoring and logging in microservices with Node.js. – By the end of this microservices book, you’ll be able to develop a web app using the Node.js framework, configure it, extend it using libraries available for this framework, and launch it using best practices. What you will learn Design domain-oriented microservices using domain-driven design (DDD) Understand collaboration techniques for inter-microservice communication and learn how to design an API gateway Automate microservice integration and deployment Split a monolith safely into microservices and understand how to test microservices effectively Use and implement microservices in Kubernetes and Docker environments Get to grips with best practices for maintaining microservices at scale Who this book is for – This book is for backend developers, full-stack developers, software architects, and frontend developers who want to venture into the world of backend development and extend their capabilities. – A fundamental understanding of the JavaScript ecosystem will be helpful but not necessary, as this book will cover the essentials of backend development, JavaScript programming, and Node.js.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781838982126"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1838982124"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 324,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.8.9.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=whn_EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=whn_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=whn_EAAAQBAJ&pg=PA65&dq=modern+web&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=whn_EAAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Building_Microservices_with_Node_js.html?hl=&id=whn_EAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=whn_EAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003emodern web\u003c/b\u003e standards. Support. for. modern. web. standards. \u003cb\u003eModern web\u003c/b\u003e standards refer to the set of technologies, protocols, and guidelines that dictate how web applications should be built and how they should interact with each other and&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "y57GRhdT27gC",
+      "etag": "DL7ybJWSNWo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/y57GRhdT27gC",
+      "volumeInfo": {
+        "title": "CSS3 Foundations",
+        "authors": [
+          "Ian Lunn"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2012-11-21",
+        "description": "Master innovative and eye-catching website design with the exciting new Treehouse Series of books Turn plain words and images into stunning websites with CSS3 and this beautiful, full-color guide. Taking web designers beyond the constraints of prebuilt themes and simple site-building tools, this new Treehouse book combines practicality with inspiration to show you how to create fully customized, modern websites that make viewers stop and stay. The exciting new Treehouse Series of books is authored by Treehouse experts and packed with innovative design ideas and practical skill-building. If you're a web developer, web designer, hobbyist, or career-changer, every book in this practical new series should be on your bookshelf. Part of the new Treehouse Series of books, teaching you effective and compelling website development and design, helping you build practical skills Provides career-worthy information from Treehouse industry pros and trainers Explains the basics of cascading style sheets (CSS), such as how to structure with CSS, use CSS syntax, how to manipulate text, and visual formatting Also covers the box model, how to animate page elements, cross-browser compatibility, and more Leverage pages of dazzling website design ideas and expert instruction with a new Treehouse Series book.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781118425152"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1118425154"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 357,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=y57GRhdT27gC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=y57GRhdT27gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=y57GRhdT27gC&pg=PA5&dq=modern+web&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=y57GRhdT27gC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=y57GRhdT27gC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 24,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 24,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=y57GRhdT27gC&rdid=book-y57GRhdT27gC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 24000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 24000000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/CSS3_Foundations-sample-epub.acsm?id=y57GRhdT27gC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/CSS3_Foundations-sample-pdf.acsm?id=y57GRhdT27gC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=y57GRhdT27gC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Ian Lunn. chapter. one. Understanding. CSS. and. the. Modern. Web. In thIs chapter, you&#39;ll learn what the \u003cb\u003emodern web\u003c/b\u003e is and why CSS is so impor- tant to it. What Is the \u003cb\u003eModern Web\u003c/b\u003e? Most importantly, the web today is what it has always been&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "p4vrBgAAQBAJ",
+      "etag": "orF6JIQ6pFI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/p4vrBgAAQBAJ",
+      "volumeInfo": {
+        "title": "Frontend Workflow with HTML5 and SASS",
+        "subtitle": "semantic, flexible and reusable code for your daily projects",
+        "authors": [
+          "Alin Seba"
+        ],
+        "publisher": "Seba Alin",
+        "publishedDate": "2015-03-03",
+        "description": "It is not that hard to explain why I've decided to write this book. The main reason is very simple: I want people to start learning writing clean, clear and smart code. On the other hand (in complement to the main reason), I also wanted to make developers aware of what they can achieve if they will think out of the box and not following rigorously some current working habits which tend to 'standardize' everything around. This book started from a very strong desire of mine after seeing everywhere a lot of 'bad' use of HTML and CSS. I say 'bad' because I do not claim what I will expose in this book is the shiniest and coolest thing around. The approach I take is somehow opinionated, but it served me very well during the last two years so I'm really into sharing this knowledge with you. And after all, the rules that you are imposing on everything you do take you to an opinionated state of mind anyway, just like discipline is something that you attain after a lot of dedicated time, perseverance and hard work. The book is for those of you who are sick and tired of working on a project that is taking a lot of time because you either start with no code base at all, you change very often new libraries and frameworks on the promise they will solve all your problems, or you simply find it difficult to wire up and organise your code in a smart and lucrative way, so you can focus on the project itself instead of worrying about your tools. You will learn the following things: - write clean code - you will learn how to write clear, semantic and concise code that will make sense to you and your co-workers - better organisation of your projects - having things sorted out in a visible manner will bring you big benefits when you're searching for something and know where to find it or when you want to move things around without breaking anything else - creating modularized and reusable components - learn to create reusable components, modify and extend them easily - code faster and smarter (improve your workflow) - the time you spend on projects is very important, so if you will develop on a good code base, your coding speed will fasten up, but not only this, you will write code in a very semantic and understandable way, not only to you, but to others too - get a grasp of web components - every day the web technologies are immersing and it seems the future of web developing will be centered around web components, so basically a web component will serve you everything you need from it, it will act as a sole unit that communicates with other components - tailor your own web framework - creating your own framework that suits your needs and can be used in the best possible way to get things done - take it to a minimum - you will also learn how to grab out only the things you need on a particular project, and not overwhelming your code base with unnecessary stuff; this way you will make your clients Internet bandwidth happy and speed up response times",
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 151,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=p4vrBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=p4vrBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=p4vrBgAAQBAJ&pg=PT14&dq=modern+web&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=p4vrBgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=p4vrBgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 9.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 9.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=p4vrBgAAQBAJ&rdid=book-p4vrBgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=p4vrBgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eModern Web\u003c/b\u003e Components subchapter. Basically, these are the components that we all are used with and they still have a lot of power in the right hands. If you are much more comfortable working like this, then ... \u003cb\u003eModern Web\u003c/b\u003e Components."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "sCZcEAAAQBAJ",
+      "etag": "tv0p6sjcqZw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/sCZcEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Real-World Next.js",
+        "subtitle": "Build scalable, high-performance, and modern web applications using Next.js, the React framework for production",
+        "authors": [
+          "Michele Riva"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2022-02-28",
+        "description": "Learn how to use Next.js for building web apps without compromising performance, user experience, and developer happiness Key FeaturesDevelop scalable web applications using Next.jsUse Next.js as a frontend for existing backends and e-commerce websites and understand how to implement it with any headless CMSDeploy Next.js on different platforms, such as Vercel, DigitalOcean, and AWS, or on your own serverBook Description Next.js is a scalable and high-performance React.js framework for modern web development and provides a large set of features, such as hybrid rendering, route prefetching, automatic image optimization, and internationalization, out of the box. If you are looking to create a blog, an e-commerce website, or a simple website, this book will show you how you can use the multipurpose Next.js framework to create an impressive user experience. Starting with the basics of Next.js, the book demonstrates how the framework can help you reach your development goals. You'll realize how versatile Next.js is as you build real-world applications with step-by-step explanations. This Next.js book will guide you in choosing the right rendering methodology for your website, securing it, and deploying it to different providers, all while focusing on performance and developer happiness. By the end of the book, you'll be able to design, build, and deploy modern architectures using Next.js with any headless CMS or data source. What you will learnGet up to speed with Next.js essentials and learn how to build apps quicklyUnderstand how to create scalable Next.js architecturesChoose between different rendering strategies, such as client-side rendering (CSR), static site generation (SSG), server-side rendering (SSR), and incremental static regeneration (ISR)Write unit tests and integration tests in your Next.js applicationDiscover the powerful routing system and Next.js' built-in componentsDesign and build modern architectures with Next.js using GraphCMS or any headless CMSWho this book is for This book is for web developers who want to improve their React skills by building scalable and maintainable full-stack applications using the modern Next.js web framework. Intermediate-level knowledge of ES6+, React, Node.js, and REST is assumed.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781801079877"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1801079870"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 367,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=sCZcEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=sCZcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=sCZcEAAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=sCZcEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=sCZcEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 35.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 22.39,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=sCZcEAAAQBAJ&rdid=book-sCZcEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 35990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 22390000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=sCZcEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "If you are looking to create a blog, an e-commerce website, or a simple website, this book will show you how you can use the multipurpose Next.js framework to create an impressive user experience."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DhnvAgAAQBAJ",
+      "etag": "b0oaohnHTQg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DhnvAgAAQBAJ",
+      "volumeInfo": {
+        "title": "Information Modelling and Knowledge Bases XXIII",
+        "authors": [
+          "J. Henno",
+          "Y. Kiyoki",
+          "T. Tokuda"
+        ],
+        "publisher": "IOS Press",
+        "publishedDate": "2012-01-18",
+        "description": "Information modelling and knowledge bases have become hot topics, not only in academic communities concerned with information systems and computer science, but also wherever information technology is applied in the world of business. This book presents the proceedings of the 21st European-Japanese Conference on Information Modelling and Knowledge Bases (EJC 2011), held in Tallinn, Estonia, in June 2011. The EJC conferences provide a worldwide forum for researchers and practitioners in the field to exchange results and experiences achieved in computer science and related disciplines such as conceptual analysis, design and specification of information systems, multimedia information modelling, multimedia systems, software engineering, knowledge and process management, cross cultural communication and context modelling. Attention is also paid to theoretical disciplines including cognitive science, artificial intelligence, logic, linguistics and analytical philosophy. The selected papers (16 full papers, 9 short papers, 2 papers based on panel sessions and 2 on invited presentations), cover a wide range of topics, including database semantics, knowledge representation, software engineering, www information management, context-based information retrieval, ontology, image databases, temporal and spatial databases, document data management, process management, cultural modelling and many others. Covering many aspects of system modelling and optimization, this book will be of interest to all those working in the field of information modelling and knowledge bases.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781607509929"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "160750992X"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 452,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DhnvAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DhnvAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=DhnvAgAAQBAJ&pg=PA287&dq=modern+web&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DhnvAgAAQBAJ&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Information_Modelling_and_Knowledge_Base.html?hl=&id=DhnvAgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Information_Modelling_and_Knowledge_Base-sample-pdf.acsm?id=DhnvAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DhnvAgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003emodern Web\u003c/b\u003e applications provide desktop-application-like flexible user experiences without using explicit requests. \u003cb\u003eModern Web\u003c/b\u003e applications need complex components: sever-side logic programs, server-side communication programs, output Web&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "NU3wOk2jzWsC",
+      "etag": "VR1skyMyZ6g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/NU3wOk2jzWsC",
+      "volumeInfo": {
+        "title": "The Tangled Web",
+        "subtitle": "A Guide to Securing Modern Web Applications",
+        "authors": [
+          "Michal Zalewski"
+        ],
+        "publisher": "No Starch Press",
+        "publishedDate": "2011-11-15",
+        "description": "Modern web applications are built on a tangle of technologies that have been developed over time and then haphazardly pieced together. Every piece of the web application stack, from HTTP requests to browser-side scripts, comes with important yet subtle security consequences. To keep users safe, it is essential for developers to confidently navigate this landscape. In The Tangled Web, Michal Zalewski, one of the world’s top browser security experts, offers a compelling narrative that explains exactly how browsers work and why they’re fundamentally insecure. Rather than dispense simplistic advice on vulnerabilities, Zalewski examines the entire browser security model, revealing weak points and providing crucial information for shoring up web application security. You’ll learn how to: –Perform common but surprisingly complex tasks such as URL parsing and HTML sanitization –Use modern security features like Strict Transport Security, Content Security Policy, and Cross-Origin Resource Sharing –Leverage many variants of the same-origin policy to safely compartmentalize complex web applications and protect user credentials in case of XSS bugs –Build mashups and embed gadgets without getting stung by the tricky frame navigation policy –Embed or host user-supplied content without running into the trap of content sniffing For quick reference, \"Security Engineering Cheat Sheets\" at the end of each chapter offer ready solutions to problems you’re most likely to encounter. With coverage extending as far as planned HTML5 features, The Tangled Web will help you create secure web applications that stand the test of time.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781593273880"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1593273886"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 324,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=NU3wOk2jzWsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=NU3wOk2jzWsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=NU3wOk2jzWsC&printsec=frontcover&dq=modern+web&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=NU3wOk2jzWsC&dq=modern+web&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Tangled_Web.html?hl=&id=NU3wOk2jzWsC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=NU3wOk2jzWsC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In The Tangled Web, Michal Zalewski, one of the world’s top browser security experts, offers a compelling narrative that explains exactly how browsers work and why they’re fundamentally insecure."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZnHGAER4j-oC",
+      "etag": "PKpH9ay+w+s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZnHGAER4j-oC",
+      "volumeInfo": {
+        "title": "ASP.NET MVC 4 Recipes",
+        "subtitle": "A Problem-Solution Approach",
+        "authors": [
+          "John Ciliberti"
+        ],
+        "publisher": "Apress",
+        "publishedDate": "2013-04-01",
+        "description": "ASP.NET MVC 4 Recipes is a practical guide for developers creating modern web applications, cutting through the complexities of ASP.NET, jQuery, Knockout.js and HTML 5 to provide straightforward solutions to common web development problems using proven methods based on best practices. The problem-solution approach gets you in, out, and back to work quickly while deepening your understanding of the underlying platform and how to develop with it. Author John Ciliberti guides you through the framework and development tools, presenting typical challenges, along with code solutions and clear, concise explanations, to accelerate application development. Inside you will find recipes dealing with streamlined syntax, full control over HTML, a simple API for creating RESTful web services, writing support for test driven development, and more. Solve problems immediately by pasting in code from the recipes, or put multiple recipe solutions together to overcome challenging development obstacles. Dive head first into ASP.NET MVC web development with ASP.NET MVC 4 Recipes.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781430247746"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1430247746"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 618,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.7.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZnHGAER4j-oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZnHGAER4j-oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ZnHGAER4j-oC&pg=PA1&dq=modern+web&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ZnHGAER4j-oC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ZnHGAER4j-oC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE_AND_RENTAL",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 49.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 39.49,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=ZnHGAER4j-oC&rdid=book-ZnHGAER4j-oC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 49990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 39490000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          },
+          {
+            "finskyOfferType": 3,
+            "listPrice": {
+              "amountInMicros": 25000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 21750000,
+              "currencyCode": "USD"
+            },
+            "rentalDuration": {
+              "unit": "DAY",
+              "count": 180
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/ASP_NET_MVC_4_Recipes-sample-epub.acsm?id=ZnHGAER4j-oC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/ASP_NET_MVC_4_Recipes-sample-pdf.acsm?id=ZnHGAER4j-oC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZnHGAER4j-oC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A Problem-Solution Approach John Ciliberti. CHAPTER 1 The Need for \u003cb\u003eModern Web\u003c/b\u003e Applications All around the world , people are spending less and less time on their PCs , and more time on tablets and smartphones ... \u003cb\u003eModern Web\u003c/b\u003e Applications."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "aAYvDwAAQBAJ",
+      "etag": "sQ7tFm4JNlI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/aAYvDwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Modern Web",
+        "subtitle": "Multi-Device Web Development with HTML5, CSS3, and JavaScript",
+        "authors": [
+          "Peter Gasston"
+        ],
+        "publisher": "No Starch Press",
+        "publishedDate": "2013-04-15",
+        "description": "Today’s web technologies are evolving at near–light speed, bringing the promise of a seamless Internet ever closer to reality. When users can browse the Web on a three-inch phone screen as easily as on a fifty-inch HDTV, what’s a developer to do? Peter Gasston’s The Modern Web will guide you through the latest and most important tools of device-agnostic web development, including HTML5, CSS3, and JavaScript. His plain-English explanations and practical examples emphasize the techniques, principles, and practices that you’ll need to easily transcend individual browser quirks and stay relevant as these technologies are updated. Learn how to: –Plan your content so that it displays fluidly across multiple devices –Design websites to interact with devices using the most up-to-date APIs, including Geolocation, Orientation, and Web Storage –Incorporate cross-platform audio and video without using troublesome plug-ins –Make images and graphics scalable on high-resolution devices with SVG –Use powerful HTML5 elements to design better forms Turn outdated websites into flexible, user-friendly ones that take full advantage of the unique capabilities of any device or browser. With the help of The Modern Web, you’ll be ready to navigate the front lines of device-independent development.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781593274887"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1593274882"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 266,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=aAYvDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aAYvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=aAYvDwAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=aAYvDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=aAYvDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 20.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 20.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=aAYvDwAAQBAJ&rdid=book-aAYvDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 20990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 20990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=aAYvDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Peter Gasston’s The Modern Web will guide you through the latest and most important tools of device-agnostic web development, including HTML5, CSS3, and JavaScript."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "N4NcDgAAQBAJ",
+      "etag": "f5qiXXtlFMA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/N4NcDgAAQBAJ",
+      "volumeInfo": {
+        "title": "Data Visualization: Representing Information on Modern Web",
+        "authors": [
+          "Andy Kirk",
+          "Simon Timms",
+          "Ǯdrew Rininsland",
+          "Swizec Teller"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2016-09-30",
+        "description": "Unleash the power of data by creating interactive, engaging, and compelling visualizations for the web About This Book Get a portable, versatile, and flexible data visualization design approach that will help you navigate the complex path towards success Get thorough explanation of the many visual variables and visualization taxonomy to provide you with a menu of creative options A comprehensive and contemporary introduction to data-driven visualization design and the most effective approaches to designing impact-maximizing and cognition-amplifying visualizations Who This Book Is For This course is for developers who are excited about data and who want to share that excitement with others and it will be handy for the web developers or data scientists who want to create interactive visualizations for the web. Prior knowledge of developing web applications is required. You should have a working knowledge of both JavaScript and HTML. What You Will Learn Harness the power of D3 by building interactive and real-time data-driven web visualizations Find out how to use JavaScript to create compelling visualizations of social data Identify the purpose of your visualization and your project's parameters to determine overriding design considerations across your project's execution Apply critical thinking to visualization design and get intimate with your dataset to identify its potential visual characteristics Explore the various features of HTML5 to design creative visualizations Discover what data is available on Stack Overflow, Facebook, Twitter, and Google+ Gain a solid understanding of the common D3 development idioms Find out how to write basic D3 code for server using Node.js In Detail Do you want to create more attractive charts? Or do you have huge data sets and need to unearth the key insights in a visual manner? Data visualization is the representation and presentation of data, using proven design techniques to bring alive the patterns, stories, and key insights that are locked away. This learning path is divided into three modules. The first module will equip you with the key techniques required to overcome contemporary data visualization challenges. After getting familiar with key concepts of data visualization, it's time to incorporate it with various technologies. In the second module, Social Data Visualization with HTML5 and JavaScript, it teaches you how to leverage HTML5 techniques through JavaScript to build visualizations. It also clears up how the often complicated OAuth protocol works to help you unlock a universe of social media data from sites such as Twitter, Facebook, and Google+. Once you are familiar with the concepts of incorporating data visualization with HTML5 and JavaScript, third module, Learning d3.js Data Visualization, will lead you to D3, which has emerged as one of the leading platforms to develop beautiful, interactive visualizations over the web. This module provides a strong foundation in designing compelling web visualizations with D3.js. By the end of this course, you will have unlocked the mystery behind successful data visualizations. This Learning Path combines some of the best that Packt has to offer in one complete, curated package. It includes content from the following Packt products: Data Visualization: a successful design process by Andy Kirk Social Data Visualization with HTML5 and JavaScript by Simon Timms Learning d3.js Data Visualization, Second Edition by Ǯdrew Rininsland and Swizec Teller Style and approach This course includes all the resources that will help you jump into creating interactive and engaging visualizations for the web. Through this comprehensive course, you'll learn how to create engaging visualizations for the web to represent your data from start to finish!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781787125070"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1787125076"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 531,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=N4NcDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=N4NcDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=N4NcDgAAQBAJ&printsec=frontcover&dq=modern+web&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=N4NcDgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=N4NcDgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 72.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 58.39,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=N4NcDgAAQBAJ&rdid=book-N4NcDgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 72990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 58390000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=N4NcDgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Unleash the power of data by creating interactive, engaging, and compelling visualizations for the web About This Book Get a portable, versatile, and flexible data visualization design approach that will help you navigate the complex path ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "3R_rAAAAMAAJ",
+      "etag": "SJsZw1IqZLw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3R_rAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Rugs of the Orient",
+        "authors": [
+          "Chandler Robbins Clifford"
+        ],
+        "publishedDate": "1911",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015016845029"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 138,
+        "printType": "BOOK",
+        "categories": [
+          "Rugs, Oriental"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.8.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=3R_rAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=3R_rAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=3R_rAAAAMAAJ&pg=PA25&dq=modern+web&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=3R_rAAAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=3R_rAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=3R_rAAAAMAAJ&rdid=book-3R_rAAAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Rugs_of_the_Orient.epub?id=3R_rAAAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Rugs_of_the_Orient.pdf?id=3R_rAAAAMAAJ&hl=&output=pdf&sig=ACfU3U37_v5DhBYs4RRskAS1FwAIPn_PHg&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3R_rAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eweb\u003c/b\u003e , loose warp ends 64 to 120 * Runners Selvage goat hair Narrow brown \u003cb\u003eweb\u003c/b\u003e , short fringe 42 to 63 * All sizes [ ] Selvage Narrow \u003cb\u003eweb\u003c/b\u003e , loose fringe * 25 to 90 4x6 4. Overcast 5 Overcast 6 Selvage , antique ; overcast , \u003cb\u003emodern\u003c/b\u003e 7&nbsp;..."
+      }
+    }
+  ]
+}
