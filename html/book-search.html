@@ -8,11 +8,11 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
         <style>
-            :root { --bg: #0b0b0b; --surface: #141414; --text: #f5f5f5; --muted: #cfcfcf; --gold:#d4af37; --border: #2a2a2a; }
+            :root { --bg: #0b0b0b; --surface: #141414; --text: #f5f5f5; --muted: #cfcfcf; --gold:#d4af37; --border: #2a2a2a; --color:var(--gold)}
             body {margin:0; font-family: Arial, sans-serif; background:var(--bg); color: var(--text);line-height: 1.6 ;}
             nav { padding:16px 20px; border-bottom:1px solid var(--border); display: flex; gap: 10px; flex-wrap: wrap;}
             a.nav-btn { border: 1px solid var(--gold);text-decoration: none;padding: 10px 14px; border-radius: 10px;}
-            a.nav-btn-hover{background: rgba(212, 175, 55,0.15);}
+            a.nav-btn:hover{background: rgba(212, 175, 55,0.15);}
             main {max-width: 1000px; margin: 0 auto; padding:24px;}
             .card{background:var(--surface); border: 1px solid var(--border); border-radius: 16px;padding: 18px;}
             h1,h2{color: var(--gold); margin-top: 0;}
@@ -30,7 +30,7 @@
     <body>
         <nav aria-label="Primary navigation">
             <a class="nav-btn" href="index.html">Home</a>
-            <a class="nav-btn" hfref="book-single.html">Single book JSON</a>
+            <a class="nav-btn" href="book-single.html">Single book JSON</a>
             <a class="nav-btn" href="book-search.html">Search Results JSON</a>
         </nav>
 
@@ -41,16 +41,15 @@
                 <div id="summary" class="meta">Loading...</div>
                 <div id="results" class="results"></div>
             </div>
-        </main>
-
         <script>
             $(function(){
-                $.getJSON("data/google-books-search.json", function(data){
+                // JSON data lives under html/js/data relative to this file
+                $.getJSON("js/data/google-books-search.json", function(data){
                     const items = Array.isArray(data.items) ? data.items : [];
                     $("#summary").text(`Results found: ${items.length}`);
 
-                    if(items.length){
-                        $("#summary").html(`<p class="error"> No books found in the JSON file. </p>`);
+                    if(!items.length){
+                        $("#results").html(`<p class="error"> No books found in the JSON file. </p>`);
                         return;
                     }
 
@@ -60,33 +59,47 @@
                         const authors = Array.isArray(v.authors) ? v.authors.join(", ") : (v.authors || "N/A");
                         const preview = v.previewLink || "";
                         const info = v.infoLink || "";
-                        const desc = v.description ? stripHtml(v.description).slice(0,200) + "-" : "No description available.";
+                        const descRaw = v.description ? stripHtml(v.description) : "No description available.";
+                        const desc = descRaw.length > 200 ? descRaw.slice(0,200) + "..." : descRaw;
 
-                        return ` 
-                        <div class="book"
-                        ${img ? `<img class="thumb" src="${img}" alt="Book cover for ${escapeHtml(v.title || "book")}" />`
-                        : `div class="thumb" style="height:240px; display:flex; align-items:center; justify-content:center; color: var(--muted);">No Image</div>`}
+                        return `
+                        <div class="book">
+                            ${img ? `<img class="thumb" src="${img}" alt="Book cover for ${escapeHtml(v.title || "book")}" />`
+                            : `<div class="thumb" style="height:240px; display:flex; align-items:center; justify-content:center; color: var(--muted);">No Image</div>`}
 
-                        <h3>${escapeHtml(v.title || "Untitled")}</h3>
-                        <div class="row"><strong>Authors</stronmg> <span class="meta">${escapeHtml(authors)}</span></div>
-                        <div class="row"><strong>Publisher</strong> <span class="meta">${escapeHtml(v.publisher || "N/A")}</span></div>
-                        <div class="row"><strong>Published</strong> <span class="meta">${escapeHtml(v.publishedDate || "N/A")}</span></div>
-                        <div class="row meta">${escapeHtml(desc)}</div>
+                            <h3>${escapeHtml(v.title || "Untitled")}</h3>
+                            <div class="row"><strong>Authors</strong> <span class="meta">${escapeHtml(authors)}</span></div>
+                            <div class="row"><strong>Publisher</strong> <span class="meta">${escapeHtml(v.publisher || "N/A")}</span></div>
+                            <div class="row"><strong>Published</strong> <span class="meta">${escapeHtml(v.publishedDate || "N/A")}</span></div>
+                            <div class="row meta">${escapeHtml(desc)}</div>
 
-                        <div class="links" style="margin-top:10px;">
-                            ${preview ? `<a href="${preview}" target="_blank">Preview</a>` : ""}
-                            ${preview && info ? ` | ` : ""}
-                            ${info ? `<a href="${info}" target="_blank" rel="noopener">More Info</a>` : ""}
+                            <div class="links" style="margin-top:10px;">
+                                ${preview ? `<a href="${preview}" target="_blank">Preview</a>` : ""}
+                                ${preview && info ? ` | ` : ""}
+                                ${info ? `<a href="${info}" target="_blank" rel="noopener">More Info</a>` : ""}
+                            </div>
                         </div>
-                    </div>
-                `;
-            }).join("");
+                    `;
+                }).join("");
 
-            $("#results").html(html);
-             }).fail(funtion(){
-                $("#summary").html(`<span class="error"> Could not load google-books-search.json. Check file path.</span>`);
-             });
-            })
+                $("#results").html(html);
+
+                }).fail(function(){
+                $("#summary").html(`<span class="error">Could not load ../js/data/google-books-search.json. Check file path.</span>`);
+                });
+
+                // Simple helper to escape HTML
+                function escapeHtml(str){
+                    var s = String(str || "");
+                    var map = { '&': '&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' };
+                    return s.replace(/[&<>"']/g, function(m){ return map[m]; });
+                }
+
+                // Remove HTML tags from a string
+                function stripHtml(html){
+                    return String(html || "").replace(/<[^>]*>/g, '')
+                }
+            });
         </script>
     </body>
 </html>
