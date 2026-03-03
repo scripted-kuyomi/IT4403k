@@ -1,5 +1,5 @@
 $(function() {
-    const jsonPath = "../js/data/weather.json";
+    const jsonPath = "js/data/weather.json";
 
 
 $.getJSON(jsonPath, function(data){
