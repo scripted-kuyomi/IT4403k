@@ -1,5 +1,6 @@
 $(function () {
-  const myBooks = ["8kwoEQAAQBAJ", "b93lDwAAQBAJ", "HOmCDwAAQBAJ"];
+  const myBooks = 
+  ["8kwoEQAAQBAJ", "b93lDwAAQBAJ", "HOmCDwAAQBAJ"];
   $("#bookshelfOutput").empty();
 
   myBooks.forEach(function (id) {
