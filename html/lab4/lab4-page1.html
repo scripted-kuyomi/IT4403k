@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1>
+        <title>Lab 4 Page 1 | User and ALbums</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding:20px;
+                background:#111;
+                color: #f5f5f5;
+            }
+
+            h1, h2 {
+                color: gold;
+            }
+
+            .card{
+                background: #1b1b1b;
+                border: 1px solid #333;
+                border-radius: 12px;
+                padding: 16px;
+                margin-bottom: 20px;
+            }
+
+            a{
+                color: gold;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+
+            ul{
+                padding-left: 20px;
+            }
+
+            li{
+                margin-bottom: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Lab 4 - Page 1</h1>
+        <div class="card">
+            <h2> User Information</h2>
+            <div id="userOutput">Loading User...</div>
+        </div>
+
+        <div class="card">
+            <h2>User Albums</h2>
+            <div id="albumsOutput">Loading Albums...</div>
+        </div>
+
+        <script>
+            $(function(){
+                const userId = 1;
+
+                $.getJSON(`https://jsonplaceholder.typicode.com/users/${userId}`, function(user){
+                    $("#userOutput").html(`
+                        <p><strong>Name:</strong> ${user.name}</p>
+                        <p><strong>Email:</strong> ${user.email}</p>
+                        <p><strong>Address:</strong> ${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>
+                        <p><strong>Company:</strong>${user.company.name}</p>
+                    `);
+                });
+
+
+                $.getJSON(`https://jsonplaceholder.typicode.com/albums?userId=${userId}`, function (albums) {
+                    let html = "<ul>";
+                        albums.forEach(function (album) {
+                            html += `<li>
+                                <a href="lab4-page2.html?albumId=${album.id}">
+                                    ${album.title}
+                                </a>
+                            </li>`;
+  });
+  html += "</ul>";
+  $("#albumsOutput").html(html);
+                })
+            })
+        </script>
+    </body>
+</html>

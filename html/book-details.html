@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Book Details | IT 4403</title>
+
+    <link rel="stylesheet" href="../css/style.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/details.js"></script>
+
+    <style>
+        .details-layout{
+            display:grid;
+            grid-template-columns: 220px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .book-cover {
+            width:100%;
+            max-width: 220px;
+            border-radius: 12px;
+            border: 1px solid #2a2a2a;
+            background: #111;
+        }
+
+        .details-card{
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            border-radius: 14px;
+            padding: 18px;
+            margin-top: 18px;
+        }
+
+        .details-card h2{
+            margin-top: 0;
+        }
+
+        .detail-row{
+            margin: 8px 0;
+        }
+
+        .detail-row strong{
+            color: #d4af37;
+        }
+
+        @media (max-width: 700px){
+            .details-layout{
+                grid-template-columns: 1fr;
+            }
+            .book-cover{
+                max-width:180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="Primary navigation">
+        <a class="nav-btn" href="milestone2-booksearch.html">Book Search</a>
+        <a class="nav-btn active" href="book-details.html">Book Details</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h1>Book Details</h1>
+            <div id="detailsOutput">Loading book details...</div>
+        </div>
+    </main>
+</body>
+</html>
