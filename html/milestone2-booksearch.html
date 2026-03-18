@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Book Search Results | IT 4403</title>
-<link rel="stylesheet" href="../css/style.css">
+  <title>Book Search Results | IT 4403</title>
+  <link rel="stylesheet" href="../css/style.css">
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/search.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/search.js"></script>
+
+  <style>
+    #paginationControls {
+      margin: 16px 0;
+    }
+
+    #pageSelect {
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background: #111;
+      color: #f5f5f5;
+    }
+  </style>
 </head>
 
 <body>
+  <nav>
+    <a class="active" href="milestone2-booksearch.html">Book Search</a>
+    <a href="index.html">Home</a>
+    <a href="bookshelf.html">My Bookshelf</a>
+  </nav>
 
-    <nav>
-        <a active href="milestone2-booksearch.html">Book Search</a>
-        <a href="index.html">Home</a>
-        <a href="bookshelf.html">My Bookshelf</a>
-    </nav>
+  <main>
+    <h1>Book Search</h1>
+    <p>Search for books using the Google Books API.</p>
 
-    <main>
+    <div id="searchArea">
+      <input type="text" id="searchInput" placeholder="Enter book title or keyword">
+      <button id="searchBtn">Search</button>
+    </div>
 
-        <h1>Book Search</h1>
-        <p>Search for books using the Google Books API.</p>
-        <div id="searchArea">
-            <input type="text" id="searchInput" placeholder="Enter book title or keyword">
-            <button id="searchBtn">Search</button>
-        </div>
+    <div id="paginationControls">
+      <label for="pageSelect">Page:</label>
+      <select id="pageSelect"></select>
+    </div>
 
-        <div id="results">
-            Results will appear here.
-        </div>
-    </main>
+    <div id="results">
+      Results will appear here.
+    </div>
+  </main>
 </body>
 </html>
