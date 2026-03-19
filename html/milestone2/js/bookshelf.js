@@ -60,13 +60,13 @@ $(function () {
         cards[id] = book;
         renderAll();
 
-        setTimeout(function () { loadBook(index + 1); }, 1200);
+        setTimeout(function () { loadBook(index + 1); }, 2500);
       })
       .fail(function (xhr) {
         console.error("Failed to load book:", id, xhr.status);
         cards[id] = { title: `Book ${id} (failed to load)`, authors: [], thumbnail: "" };
         renderAll();
-        setTimeout(function () { loadBook(index + 1); }, 1200);
+        setTimeout(function () { loadBook(index + 1); }, 2500);
       });
   }
 
