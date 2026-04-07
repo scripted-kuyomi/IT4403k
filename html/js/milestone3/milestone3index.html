@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Milestone 3 - Google Books SPA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header class="app-header">
+        <h1>Google Books SPA</h1>
+        <p>Milestone 3 - Single Page Application using AJAX</p>
+    </header>
+
+    <main class="app-layout">
+        <section class="left-panel">
+            <div class="card">
+                <h2>Search Books</h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Enter a book title or keyword">
+                    <button id="searchBtn">Search</button>
+                </div>
+
+                <div id="paginationSection">
+                    <h3>Pages</h3>
+                    <div id="pagination"></div>
+                    <p id="pageStatus">No Search yet.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Search Results</h2>
+                <div id="searchResults" class="results-grid">
+                    <p class="placeholder-text">Search results will appear here.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>My Bookshelf</h2>
+                <p class="section-note">Click any book to view details on the same page</p>
+                <div id="bookshelfResults" class="results-grid">
+                    <p class="placeholder-text">Loading bookshelf books...</p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="right-panel">
+            <div class="card details-card">
+                <h2> Book Details</h2>
+                <div id="detailsPanel">
+                    <p class="placeholder-text">Click a book from the search results or bookshelf to see details here.</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
