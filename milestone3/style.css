@@ -30,17 +30,17 @@ nav {
     flex-wrap: wrap;
 }
 
-.nav-btn {
+.nav-btn{
     appearance: none;
-    border: 1px solid var(--gold);
-    background: transparent;
-    color: var(--gold);
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s ease;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .nav-btn:hover {
