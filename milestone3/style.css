@@ -71,16 +71,14 @@ nav {
 }
 
 .app-layout {
-    max-width: 1400px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    padding: 24px 20px;
+    display: block;
 }
 
 .left-panel,
-.right-panel{
+.right-panel {
     min-width: 0;
 }
 
@@ -90,11 +88,12 @@ nav {
     border-radius: 16px;
     padding: 18px;
     margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 h2,
 h3 {
-    color: var(--gold);
+    color: #f0e6c2;
     margin-top: 0;
 }
 
@@ -236,15 +235,14 @@ button.active-page {
 }
 
 .details-card {
-    position: sticky;
-    top: 20px;
+    margin-top: 20px;
 }
 
 .details-layout {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 18px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
 }
 
 .details-btn{
