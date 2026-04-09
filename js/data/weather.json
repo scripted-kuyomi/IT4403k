@@ -1,0 +1,10 @@
+{
+    "city": {"name": "Atlanta", "country": "US"},
+    "weather": {
+        "description": "clear sky",
+        "temperature": 72,
+        "feels_like": 70,
+        "humidity": 45,
+        "wind_speed": 8
+    }
+}

@@ -3,7 +3,7 @@ $(function () {
   let currentPage = 1;
   const resultsPerPage = 10;
   const totalPages = 5;
-  const apiKey = "AIzaSyCmDf4-O2a9aQMMt4LLaUrROJF_t5rFkiU";
+  const apiKey = "AIzaSyBQaGkyDUoiGeEwQPEt05I29Wl4K-jt03M";
 
   const bookshelfIds = [
     "8kwoEQAAQBAJ",

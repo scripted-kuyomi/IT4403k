@@ -45,7 +45,7 @@ $(function () {
       return;
     }
 
-    $.getJSON(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyCmDf4-O2a9aQMMt4LLaUrROJF_t5rFkiU`)
+    $.getJSON(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyBQaGkyDUoiGeEwQPEt05I29Wl4K-jt03M`)
       .done(function (data) {
         const v = data.volumeInfo || {};
         const book = {

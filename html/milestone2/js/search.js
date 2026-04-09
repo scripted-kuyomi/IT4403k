@@ -54,7 +54,7 @@ $(function () {
       return;
     }
 
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(currentSearchTerm)}&maxResults=${resultsPerPage}&startIndex=${startIndex}&key=AIzaSyCmDf4-O2a9aQMMt4LLaUrROJF_t5rFkiU`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(currentSearchTerm)}&maxResults=${resultsPerPage}&startIndex=${startIndex}&key=AIzaSyBQaGkyDUoiGeEwQPEt05I29Wl4K-jt03M`;
 
     $.getJSON(url, function (data) {
       sessionStorage.setItem(cacheKey, JSON.stringify(data));
