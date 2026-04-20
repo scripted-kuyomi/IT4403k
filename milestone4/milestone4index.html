@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milestone 4 - TMDB Movie SPA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-btn" href="../index.html">Home</a>
+        <a class="nav-btn" href="../project.html">Projects</a>
+        <a class="nav-btn" href="../exercises.html">Exercises</a>
+    </nav>
+
+    <header class="app-header">
+        <div>
+            <p class="eyebrow">Milestone 4 SPA</p>
+            <h1>Movie Finder Studio</h1>
+            <p>Search TMDB movies, browse curated collections, and inspect rich movie details without leaving the page.</p>
+            <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+        </div>
+    </header>
+
+    <main class="app-shell">
+        <section class="toolbar-panel" aria-labelledby="searchHeading">
+            <div>
+                <h2 id="searchHeading">Search Movies</h2>
+                <p>Try a title, genre, actor, or keyword.</p>
+            </div>
+
+            <form id="searchForm" class="search-bar">
+                <label class="sr-only" for="searchInput">Search term</label>
+                <input type="search" id="searchInput" value="spider man" placeholder="Search movies">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="control-row" aria-label="Display controls">
+            <div class="tab-group" role="tablist" aria-label="Content sections">
+                <button class="tab-btn active" type="button" data-tab="search" role="tab" aria-selected="true">Search Results</button>
+                <button class="tab-btn" type="button" data-tab="collection" role="tab" aria-selected="false">Collection</button>
+            </div>
+
+            <div class="view-group" aria-label="Layout view">
+                <button class="view-btn active" type="button" data-view="grid">Grid</button>
+                <button class="view-btn" type="button" data-view="list">List</button>
+            </div>
+        </section>
+
+        <section class="content-layout">
+            <div class="results-panel">
+                <section id="searchSection" class="content-section active" aria-labelledby="searchResultsHeading">
+                    <div class="section-heading">
+                        <div>
+                            <h2 id="searchResultsHeading">Search Results</h2>
+                            <p id="searchSummary">Results load dynamically from the TMDB API.</p>
+                        </div>
+                    </div>
+
+                    <div id="searchResults" class="items-grid" aria-live="polite"></div>
+
+                    <div class="pagination-panel" aria-label="Search pagination">
+                        <button id="prevPage" type="button">Previous</button>
+                        <p id="pageStatus">Page 1</p>
+                        <button id="nextPage" type="button">Next</button>
+                    </div>
+                </section>
+
+                <section id="collectionSection" class="content-section" aria-labelledby="collectionHeading">
+                    <div class="section-heading">
+                        <div>
+                            <h2 id="collectionHeading">Public Collection</h2>
+                            <p id="collectionSummary">Popular and top-rated movies load separately from search results.</p>
+                        </div>
+
+                        <div class="collection-switcher" aria-label="Collection type">
+                            <button class="collection-btn active" type="button" data-collection="popular">Popular</button>
+                            <button class="collection-btn" type="button" data-collection="topRated">Top Rated</button>
+                        </div>
+                    </div>
+
+                    <div id="collectionResults" class="items-grid" aria-live="polite"></div>
+                </section>
+            </div>
+
+            <aside class="details-panel" aria-labelledby="detailsHeading">
+                <h2 id="detailsHeading">Movie Details</h2>
+                <div id="detailsPanel" aria-live="polite">
+                    <p class="placeholder-text">Choose a movie to view details here.</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <script id="movie-card-template" type="x-tmpl-mustache">
+        {{#movies}}
+        <article class="book-card" data-id="{{id}}">
+            <div class="cover-wrap">
+                {{#poster}}
+                <img src="{{poster}}" alt="Poster for {{title}}">
+                {{/poster}}
+                {{^poster}}
+                <div class="no-image">No image available</div>
+                {{/poster}}
+            </div>
+
+            <div class="book-copy">
+                <p class="book-tag">{{category}}</p>
+                <h3>{{title}}</h3>
+                <p class="authors">{{releaseDate}}</p>
+                <p class="snippet">{{shortDescription}}</p>
+                <div class="meta-row">
+                    <span>{{language}}</span>
+                    <span>{{ratingText}}</span>
+                </div>
+                <button class="details-btn" type="button" data-id="{{id}}">View Details</button>
+            </div>
+        </article>
+        {{/movies}}
+    </script>
+
+    <script id="details-template" type="x-tmpl-mustache">
+        <article class="details-content">
+            <div class="details-cover">
+                {{#poster}}
+                <img src="{{poster}}" alt="Poster for {{title}}">
+                {{/poster}}
+                {{^poster}}
+                <div class="no-image">No image available</div>
+                {{/poster}}
+            </div>
+
+            <div class="details-copy">
+                <p class="book-tag">{{category}}</p>
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+
+                <dl class="details-list">
+                    <div>
+                        <dt>Genres</dt>
+                        <dd>{{genresText}}</dd>
+                    </div>
+                    <div>
+                        <dt>Status</dt>
+                        <dd>{{status}}</dd>
+                    </div>
+                    <div>
+                        <dt>Released</dt>
+                        <dd>{{releaseDate}}</dd>
+                    </div>
+                    <div>
+                        <dt>Language</dt>
+                        <dd>{{language}}</dd>
+                    </div>
+                    <div>
+                        <dt>Rating</dt>
+                        <dd>{{ratingText}}</dd>
+                    </div>
+                    <div>
+                        <dt>Runtime</dt>
+                        <dd>{{runtime}}</dd>
+                    </div>
+                </dl>
+
+                {{#tmdbLink}}
+                <a class="preview-link" href="{{tmdbLink}}" target="_blank" rel="noopener">Open TMDB Page</a>
+                {{/tmdbLink}}
+            </div>
+        </article>
+    </script>
+
+    <script id="empty-template" type="x-tmpl-mustache">
+        <div class="empty-state">
+            <h3>{{title}}</h3>
+            <p>{{message}}</p>
+        </div>
+    </script>
+</body>
+</html>
