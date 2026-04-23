@@ -4,7 +4,7 @@ $(function () {
   const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
   const state = {
-    searchTerm: "spider man",
+    searchTerm: "",
     currentPage: 1,
     totalPages: 1,
     activeTab: "search",
